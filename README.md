@@ -1,9 +1,5 @@
-# Fabric Example Mod
+# EBWMI/Eats Bread With Malicious Intent
 
-## Setup
+## About
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+EBWMI is a mod that adds Malicious Bread into Minecraft. When you eat the bread it takes one durability away from the item, and overtime the durability will increase. Why? Because now you can threaten your friends by just eating bread, yay.
