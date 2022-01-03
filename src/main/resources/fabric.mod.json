@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ebwmi",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Eats Bread With Malicious Intent",
+  "description": "Adds Malicious Bread into Minecraft",
   "authors": [
-    "Me!"
+    "ThePoultryMan"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/ThePoultryMan/EBWMI"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/ebwmi/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "thepoultryman.ebwmi.Ebwmi"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
