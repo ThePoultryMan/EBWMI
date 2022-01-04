@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            {
+                "item": "minecraft:bread"
+            },
+            {
+                "item": "ebwmi:malicious_bread"
+            }
+        ],
+        {
+            "item": "minecraft:poisonous_potato"
+        }
+    ],
+    "result": {
+        "item": "ebwmi:malicious_bread"
+    }
+}
