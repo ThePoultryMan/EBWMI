@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "ebwmi",
-  "version": "${version}",
+  "version": "0.1.0",
 
   "name": "Eats Bread With Malicious Intent",
   "description": "Adds Malicious Bread into Minecraft",
