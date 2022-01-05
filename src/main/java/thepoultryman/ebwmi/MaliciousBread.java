@@ -2,6 +2,7 @@ package thepoultryman.ebwmi;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -9,6 +10,14 @@ import net.minecraft.world.World;
 public class MaliciousBread extends Item {
 	public MaliciousBread(Settings settings) {
 		super(settings);
+	}
+
+	@Override
+	public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+		if (entity instanceof LivingEntity livingEntity && selected)
+			livingEntity.addStatusEffect(new StatusEffectInstance(Ebwmi.MALICIOUS_INTENT_STATUS_EFFECT, 220));
+		else if (entity instanceof LivingEntity livingEntity)
+			livingEntity.removeStatusEffect(Ebwmi.MALICIOUS_INTENT_STATUS_EFFECT);
 	}
 
 	@Override
