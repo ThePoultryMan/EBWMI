@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi;
+package thepoultryman.ebwmi.items;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -6,6 +6,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import thepoultryman.ebwmi.Ebwmi;
 
 public class MaliciousBread extends Item {
 	public MaliciousBread(Settings settings) {
@@ -25,6 +26,8 @@ public class MaliciousBread extends Item {
 		stack.damage(1, user, (userx) -> {
 			userx.sendToolBreakStatus(user.preferredHand);
 		});
+
+		user.eatFood(world, new ItemStack(Ebwmi.MALICIOUS_BREAD));
 
 		return stack;
 	}
