@@ -46,7 +46,7 @@ public class Ebwmi implements ModInitializer {
 	public static BlockEntityType<CampfirePotEntity> CAMPFIRE_POT_BLOCK_ENTITY_TYPE;
 
 	// Items
-	public static final Item MALICIOUS_BREAD = new MaliciousBread(new Item.Settings().group(ItemGroup.FOOD).maxCount(1).maxDamage(64).food(new FoodComponent.Builder().alwaysEdible().build()));
+	public static final Item MALICIOUS_BREAD = new MaliciousBread(new Item.Settings().group(ItemGroup.FOOD).maxCount(1).maxDamage(64).food(new FoodComponent.Builder().hunger(1).alwaysEdible().build()));
 
 	// Status Effects
 	public static final StatusEffect MALICIOUS_INTENT_STATUS_EFFECT = new MaliciousIntentStatusEffect();
