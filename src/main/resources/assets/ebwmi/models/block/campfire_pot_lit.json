@@ -1,0 +1,278 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"campfire_pot": "ebwmi:block/campfire_pot",
+		"stone": "minecraft:block/stone",
+		"fire": "minecraft:block/campfire_fire"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 0],
+			"to": [5, 4, 16],
+			"faces": {
+				"north": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "south"},
+				"west": {"uv": [8, 0, 0, 2], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 0, 8, 2], "rotation": 90, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 0, 8, 2], "rotation": 90, "texture": "#campfire_pot", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 3, 11],
+			"to": [16, 7, 15],
+			"faces": {
+				"north": {"uv": [8, 0, 0, 2], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"},
+				"west": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 2], "rotation": 180, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [11, 0, 0],
+			"to": [15, 4, 16],
+			"faces": {
+				"north": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "south"},
+				"west": {"uv": [8, 0, 0, 2], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 0, 8, 2], "rotation": 90, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 0, 8, 2], "rotation": 90, "texture": "#campfire_pot", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 3, 1],
+			"to": [16, 7, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "east"},
+				"south": {"uv": [8, 0, 0, 2], "texture": "#campfire_pot"},
+				"west": {"uv": [0, 2, 2, 4], "texture": "#campfire_pot", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 2], "rotation": 180, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 0, 8, 2], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [5, 0, 0],
+			"to": [11, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 7.5, 3, 8], "texture": "#campfire_pot", "cullface": "north"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#campfire_pot"},
+				"south": {"uv": [5, 7.5, 8, 8], "texture": "#campfire_pot", "cullface": "south"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 4, 8, 7], "rotation": 90, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 4, 8, 7], "rotation": 90, "texture": "#campfire_pot", "cullface": "down"}
+			}
+		},
+		{
+			"from": [4, 13, 4],
+			"to": [5, 19, 12],
+			"faces": {
+				"north": {"uv": [3.5, 8, 4, 11], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 8, 4, 11], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 8, 0.5, 11], "texture": "#campfire_pot"},
+				"west": {"uv": [0, 8, 4, 11], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8, 4, 8.5], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 10.5, 4, 11], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [11, 13, 4],
+			"to": [12, 19, 12],
+			"faces": {
+				"north": {"uv": [0, 8, 0.5, 11], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 8, 4, 11], "texture": "#campfire_pot"},
+				"south": {"uv": [3.5, 8, 4, 11], "texture": "#campfire_pot"},
+				"west": {"uv": [0, 8, 4, 11], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8, 4, 8.5], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [0, 10.5, 4, 11], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [5, 13, 11],
+			"to": [11, 19, 12],
+			"faces": {
+				"north": {"uv": [0.5, 8, 3.5, 11], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 8, 0.5, 11], "texture": "#campfire_pot"},
+				"south": {"uv": [0.5, 8, 3.5, 11], "texture": "#campfire_pot"},
+				"west": {"uv": [3.5, 8, 4, 11], "texture": "#campfire_pot"},
+				"up": {"uv": [0.5, 8, 3.5, 8.5], "texture": "#campfire_pot"},
+				"down": {"uv": [0.5, 10.5, 3.5, 11], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [5, 13, 4],
+			"to": [11, 19, 5],
+			"faces": {
+				"north": {"uv": [0.5, 8, 3.5, 11], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 8, 0.5, 11], "texture": "#campfire_pot"},
+				"south": {"uv": [0.5, 8, 3.5, 11], "texture": "#campfire_pot"},
+				"west": {"uv": [3.5, 8, 4, 11], "texture": "#campfire_pot"},
+				"up": {"uv": [0.5, 8, 3.5, 8.5], "texture": "#campfire_pot"},
+				"down": {"uv": [0.5, 10.5, 3.5, 11], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [5, 13, 5],
+			"to": [11, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 12, 3, 12.5], "texture": "#campfire_pot"},
+				"east": {"uv": [0, 12.5, 3, 13], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 13, 3, 13.5], "texture": "#campfire_pot"},
+				"west": {"uv": [0, 13.5, 3, 14], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 11, 3, 14], "texture": "#campfire_pot"},
+				"down": {"uv": [0, 11, 3, 14], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [0, 0, 7],
+			"to": [1, 22, 9],
+			"faces": {
+				"north": {"uv": [8, 0.5, 8.5, 11.5], "texture": "#stone"},
+				"east": {"uv": [8.5, 0.5, 9.5, 11.5], "texture": "#stone"},
+				"south": {"uv": [9.5, 0.5, 10, 11.5], "texture": "#stone"},
+				"west": {"uv": [8.5, 0.5, 9.5, 11.5], "texture": "#stone"},
+				"up": {"uv": [8.5, 0, 9.5, 0.5], "rotation": 270, "texture": "#stone"},
+				"down": {"uv": [8.5, 11.5, 9.5, 12], "rotation": 90, "texture": "#stone"}
+			}
+		},
+		{
+			"from": [15, 0, 7],
+			"to": [16, 22, 9],
+			"faces": {
+				"north": {"uv": [8, 0.5, 8.5, 11.5], "texture": "#stone"},
+				"east": {"uv": [8.5, 0.5, 9.5, 11.5], "texture": "#stone"},
+				"south": {"uv": [9.5, 0.5, 10, 11], "texture": "#stone"},
+				"west": {"uv": [8.5, 0.5, 9.5, 11.5], "texture": "#stone"},
+				"up": {"uv": [8.5, 0, 9.5, 0.5], "rotation": 90, "texture": "#stone"},
+				"down": {"uv": [8.5, 11.5, 9.5, 12], "rotation": 90, "texture": "#stone"}
+			}
+		},
+		{
+			"from": [12.5, 17, 7],
+			"to": [13, 18, 9],
+			"faces": {
+				"north": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [2.25, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1.5, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [1.25, 8.5, 2.25, 8.75], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [1.25, 8.75, 2.25, 9], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [12, 17, 9],
+			"to": [13, 18, 9.5],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 1.75, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 8.5, 0.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8.5, 0.5, 8.75], "texture": "#campfire_pot"},
+				"down": {"uv": [0, 8.75, 0.5, 9], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [12, 17, 6.5],
+			"to": [13, 18, 7],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 1.75, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 8.5, 0.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8.5, 0.5, 8.75], "texture": "#campfire_pot"},
+				"down": {"uv": [0, 8.75, 0.5, 9], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [3, 17, 6.5],
+			"to": [4, 18, 7],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 1.75, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 8.5, 0.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8.5, 0.5, 8.75], "texture": "#campfire_pot"},
+				"down": {"uv": [0, 8.75, 0.5, 9], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [3, 17, 9],
+			"to": [4, 18, 9.5],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 1.75, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [0, 8.5, 0.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [0, 8.5, 0.5, 8.75], "texture": "#campfire_pot"},
+				"down": {"uv": [0, 8.75, 0.5, 9], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [3, 17, 7],
+			"to": [3.5, 18, 9],
+			"faces": {
+				"north": {"uv": [1, 8.5, 1.25, 9], "texture": "#campfire_pot"},
+				"east": {"uv": [1.5, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"south": {"uv": [2.25, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"west": {"uv": [1.5, 8.5, 2.5, 9], "texture": "#campfire_pot"},
+				"up": {"uv": [1.25, 8.5, 2.25, 8.75], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [1.25, 8.75, 2.25, 9], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [12, 16.75, 7.5],
+			"to": [16.65, 17.9, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [12.5, 17.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 1, 7.325, 1.5], "rotation": 180, "texture": "#campfire_pot"},
+				"east": {"uv": [6, 1.5, 6.5, 2], "texture": "#campfire_pot"},
+				"south": {"uv": [5.5, 1, 7.825, 1.5], "texture": "#campfire_pot"},
+				"west": {"uv": [6.5, 1.5, 7, 2], "texture": "#campfire_pot"},
+				"up": {"uv": [5, 0.5, 7.325, 1], "texture": "#campfire_pot"},
+				"down": {"uv": [3, 0.5, 5.325, 1], "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [2.7, 17, 7.5],
+			"to": [3.85, 21.65, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [3.25, 17.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 1, 7.325, 1.5], "rotation": 270, "texture": "#campfire_pot"},
+				"east": {"uv": [3, 0.5, 5.325, 1], "rotation": 270, "texture": "#campfire_pot"},
+				"south": {"uv": [5.5, 1, 7.825, 1.5], "rotation": 270, "texture": "#campfire_pot"},
+				"west": {"uv": [5, 0.5, 7.325, 1], "rotation": 270, "texture": "#campfire_pot"},
+				"up": {"uv": [6, 1.5, 6.5, 2], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [6.5, 1.5, 7, 2], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [8, 1, 0.8],
+			"to": [8, 13, 15.2],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 4, 16, 16], "texture": "#fire"},
+				"west": {"uv": [0, 4, 16, 16], "texture": "#fire"}
+			}
+		},
+		{
+			"from": [0.8, 1, 8],
+			"to": [15.2, 13, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 4, 16, 16], "texture": "#fire"},
+				"south": {"uv": [0, 4, 16, 16], "texture": "#fire"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 10.5, 0]
+		}
+	}
+}

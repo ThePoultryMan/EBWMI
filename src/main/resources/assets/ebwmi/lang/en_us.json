@@ -1,4 +1,6 @@
 {
     "item.ebwmi.malicious_bread": "Malicious Bread",
-    "effect.ebwmi.malicious_intent": "Malicious Intent"
+    "effect.ebwmi.malicious_intent": "Malicious Intent",
+
+    "block.ebwmi.campfire_pot": "Campfire Pot"
 }

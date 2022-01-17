@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "thepoultryman.ebwmi.Ebwmi"
+    ],
+    "client": [
+      "thepoultryman.ebwmi.EbwmiClient"
     ]
   },
   "mixins": [

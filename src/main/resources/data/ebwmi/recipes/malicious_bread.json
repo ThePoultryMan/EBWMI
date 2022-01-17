@@ -1,19 +1,10 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        [
-            {
-                "item": "minecraft:bread"
-            },
-            {
-                "item": "ebwmi:malicious_bread"
-            }
-        ],
-        {
-            "item": "minecraft:poisonous_potato"
-        }
-    ],
-    "result": {
-        "item": "ebwmi:malicious_bread"
-    }
+    "type": "ebwmi:campfire_pot_recipe",
+    "ingredientA": {
+        "item": "minecraft:bread"
+    },
+    "ingredientB": {
+        "item": "minecraft:poisonous_potato"
+    },
+    "outputItem": "ebwmi:malicious_bread"
 }
