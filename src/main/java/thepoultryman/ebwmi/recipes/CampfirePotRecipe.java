@@ -13,13 +13,15 @@ public class CampfirePotRecipe implements Recipe<SimpleInventory> {
     private final Ingredient ingredientA;
     private final Ingredient ingredientB;
     private final Ingredient ingredientC;
+    private final int cookingTime;
     private final ItemStack outputStack;
     private final Identifier id;
 
-    public CampfirePotRecipe(Ingredient ingredientA, Ingredient ingredientB, Ingredient ingredientC, ItemStack outputStack, Identifier id) {
+    public CampfirePotRecipe(Ingredient ingredientA, Ingredient ingredientB, Ingredient ingredientC, int cookingTime, ItemStack outputStack, Identifier id) {
         this.ingredientA = ingredientA;
         this.ingredientB = ingredientB;
         this.ingredientC = ingredientC;
+        this.cookingTime = cookingTime;
         this.outputStack = outputStack;
         this.id = id;
     }
@@ -34,6 +36,10 @@ public class CampfirePotRecipe implements Recipe<SimpleInventory> {
 
     public Ingredient getIngredientC() {
         return ingredientC;
+    }
+
+    public int getCookingTime() {
+        return cookingTime;
     }
 
     private Ingredient getIngredient(int id) {

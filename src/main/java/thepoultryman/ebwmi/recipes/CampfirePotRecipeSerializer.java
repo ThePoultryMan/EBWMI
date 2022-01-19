@@ -29,6 +29,7 @@ public class CampfirePotRecipeSerializer implements RecipeSerializer<CampfirePot
         if (recipeJson.ingredientA == null || recipeJson.outputItem == null) {
             throw new JsonSyntaxException("(EBWMI) A required attribute is missing!");
         }
+        if (recipeJson.cookingTime == 0) recipeJson.cookingTime = 20;
         if (recipeJson.outputAmount == 0) recipeJson.outputAmount = 1;
 
         ingredientA = Ingredient.fromJson(recipeJson.ingredientA);
@@ -43,10 +44,11 @@ public class CampfirePotRecipeSerializer implements RecipeSerializer<CampfirePot
             ingredientC = Ingredient.fromJson(recipeJson.ingredientC);
         }
 
+        int cookingTime = recipeJson.cookingTime * 5;
         Item outputItem = Registry.ITEM.getOrEmpty(new Identifier(recipeJson.outputItem)).orElseThrow(() -> new JsonSyntaxException("(EBWMI) No such item: " + recipeJson.outputItem));
         ItemStack outputStack = new ItemStack(outputItem, recipeJson.outputAmount);
 
-        return new CampfirePotRecipe(ingredientA, ingredientB, ingredientC, outputStack, id);
+        return new CampfirePotRecipe(ingredientA, ingredientB, ingredientC, cookingTime,outputStack, id);
     }
 
     @Override
@@ -54,6 +56,7 @@ public class CampfirePotRecipeSerializer implements RecipeSerializer<CampfirePot
         recipe.getIngredientA().write(buf);
         recipe.getIngredientB().write(buf);
         recipe.getIngredientC().write(buf);
+        buf.writeInt(recipe.getCookingTime());
         buf.writeItemStack(recipe.getOutput());
     }
 
@@ -62,7 +65,8 @@ public class CampfirePotRecipeSerializer implements RecipeSerializer<CampfirePot
         Ingredient ingredientA = Ingredient.fromPacket(buf);
         Ingredient ingredientB = Ingredient.fromPacket(buf);
         Ingredient ingredientC = Ingredient.fromPacket(buf);
+        int cookingTime = buf.readInt();
         ItemStack outputStack = buf.readItemStack();
-        return new CampfirePotRecipe(ingredientA, ingredientB, ingredientC, outputStack, id);
+        return new CampfirePotRecipe(ingredientA, ingredientB, ingredientC, cookingTime, outputStack, id);
     }
 }

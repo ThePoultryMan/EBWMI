@@ -6,5 +6,6 @@
     "ingredientB": {
         "item": "minecraft:poisonous_potato"
     },
+    "cookingTime": 15,
     "outputItem": "ebwmi:malicious_bread"
 }

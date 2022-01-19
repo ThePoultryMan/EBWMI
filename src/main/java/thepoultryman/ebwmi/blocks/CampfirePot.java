@@ -2,7 +2,8 @@ package thepoultryman.ebwmi.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.MinecraftClient;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemPlacementContext;
@@ -46,7 +47,7 @@ public class CampfirePot extends BlockWithEntity {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack stackInHand = player.getStackInHand(hand);
 
-        if (!world.isClient && world.getBlockEntity(pos) instanceof CampfirePotEntity campfirePotEntity && !campfirePotEntity.isIngredientBlockItem(stackInHand)) {
+        if (!world.isClient && world.getBlockEntity(pos) instanceof CampfirePotEntity campfirePotEntity && !campfirePotEntity.isIngredientBlockItem(stackInHand) && !state.get(LIT)) {
             if (!player.isSneaking()) {
                 if (stackInHand.getItem().equals(Items.FLINT_AND_STEEL)) {
                    setLit(world, pos, state, campfirePotEntity);
@@ -87,6 +88,12 @@ public class CampfirePot extends BlockWithEntity {
         return new CampfirePotEntity(pos, state);
     }
 
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+        return checkType(type, Ebwmi.CAMPFIRE_POT_BLOCK_ENTITY_TYPE, (world1, pos, state1, blockEntity) -> blockEntity.cookingTick(world1, pos));
+    }
+
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
@@ -99,8 +106,8 @@ public class CampfirePot extends BlockWithEntity {
         Optional<CampfirePotRecipe> match = world.getRecipeManager().getFirstMatch(CampfirePotRecipe.CampfirePotType.INSTANCE, inventory, world);
 
         if (match.isPresent()) {
-            ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), match.get().getOutput().copy());
             campfirePotEntity.useIngredients();
+            campfirePotEntity.setCookingTime(match.get().getCookingTime());
         }
     }
 
