@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"campfire_pot": "ebwmi:block/campfire_pot",
-		"stone": "minecraft:block/stone",
-		"fire": "minecraft:block/campfire_fire"
+		"stone": "block/stone",
+		"fire": "block/campfire_fire"
 	},
 	"elements": [
 		{
@@ -224,27 +224,27 @@
 			}
 		},
 		{
-			"from": [12, 16.75, 7.5],
-			"to": [16.65, 17.9, 8.5],
-			"rotation": {"angle": 45, "axis": "z", "origin": [12.5, 17.5, 8]},
+			"from": [12.1, 17, 7.5],
+			"to": [13.25, 21.65, 8.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [12.5, 17.5, 8]},
 			"faces": {
-				"north": {"uv": [5, 1, 7.325, 1.5], "rotation": 180, "texture": "#campfire_pot"},
-				"east": {"uv": [6, 1.5, 6.5, 2], "texture": "#campfire_pot"},
-				"south": {"uv": [5.5, 1, 7.825, 1.5], "texture": "#campfire_pot"},
-				"west": {"uv": [6.5, 1.5, 7, 2], "texture": "#campfire_pot"},
-				"up": {"uv": [5, 0.5, 7.325, 1], "texture": "#campfire_pot"},
-				"down": {"uv": [3, 0.5, 5.325, 1], "texture": "#campfire_pot"}
-			}
-		},
-		{
-			"from": [2.7, 17, 7.5],
-			"to": [3.85, 21.65, 8.5],
-			"rotation": {"angle": 45, "axis": "z", "origin": [3.25, 17.5, 8]},
-			"faces": {
-				"north": {"uv": [5, 1, 7.325, 1.5], "rotation": 270, "texture": "#campfire_pot"},
+				"north": {"uv": [4.5, 1, 6.825, 1.5], "rotation": 270, "texture": "#campfire_pot"},
 				"east": {"uv": [3, 0.5, 5.325, 1], "rotation": 270, "texture": "#campfire_pot"},
 				"south": {"uv": [5.5, 1, 7.825, 1.5], "rotation": 270, "texture": "#campfire_pot"},
 				"west": {"uv": [5, 0.5, 7.325, 1], "rotation": 270, "texture": "#campfire_pot"},
+				"up": {"uv": [6, 1.5, 6.5, 2], "rotation": 270, "texture": "#campfire_pot"},
+				"down": {"uv": [6.5, 1.5, 7, 2], "rotation": 270, "texture": "#campfire_pot"}
+			}
+		},
+		{
+			"from": [2.7, 16.85, 7.5],
+			"to": [3.85, 21.5, 8.5],
+			"rotation": {"angle": 45, "axis": "z", "origin": [3.3, 17.5, 8]},
+			"faces": {
+				"north": {"uv": [4.5, 1, 6.825, 1.5], "rotation": 270, "texture": "#campfire_pot"},
+				"east": {"uv": [5, 0.5, 7.325, 1], "rotation": 270, "texture": "#campfire_pot"},
+				"south": {"uv": [5.5, 1, 7.825, 1.5], "rotation": 270, "texture": "#campfire_pot"},
+				"west": {"uv": [3, 0.5, 5.325, 1], "rotation": 270, "texture": "#campfire_pot"},
 				"up": {"uv": [6, 1.5, 6.5, 2], "rotation": 270, "texture": "#campfire_pot"},
 				"down": {"uv": [6.5, 1.5, 7, 2], "rotation": 270, "texture": "#campfire_pot"}
 			}
