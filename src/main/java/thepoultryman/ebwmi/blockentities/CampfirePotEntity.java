@@ -7,7 +7,6 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
 import net.minecraft.network.Packet;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
@@ -19,23 +18,22 @@ import org.jetbrains.annotations.Nullable;
 import thepoultryman.ebwmi.Ebwmi;
 import thepoultryman.ebwmi.blocks.CampfirePot;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
+import thepoultryman.ebwmi.registry.BlockEntityRegistry;
 
-import java.util.Objects;
 import java.util.Optional;
 
 public class CampfirePotEntity extends BlockEntity{
     public final DefaultedList<ItemStack> ingredients;
     private SimpleInventory cookingInventory = new SimpleInventory(ItemStack.EMPTY, ItemStack.EMPTY, ItemStack.EMPTY);
     private int cookingTime;
-    private CampfirePotRecipe match;
 
     public CampfirePotEntity(BlockPos blockPos, BlockState blockState) {
-        super(Ebwmi.CAMPFIRE_POT_BLOCK_ENTITY_TYPE, blockPos, blockState);
+        super(BlockEntityRegistry.CAMPFIRE_POT_BLOCK_ENTITY, blockPos, blockState);
         ingredients = DefaultedList.ofSize(3, ItemStack.EMPTY);
     }
 
     public void addIngredient(ItemStack ingredient) {
-        if (ingredient.isEmpty() || ingredient.isIn(Ebwmi.EBWMI_UNCOOKABLE)) return;
+        if (ingredient.isEmpty() || ingredient.isIn(Ebwmi.UNCOOKABLE)) return;
         for (int i = 0; i < ingredients.size(); ++i) {
             ItemStack currentIngredient = (ItemStack) ingredients.get(i);
             if (currentIngredient.isEmpty()) {
@@ -98,8 +96,6 @@ public class CampfirePotEntity extends BlockEntity{
     private void clear() {
         ingredients.clear();
         cookingInventory.clear();
-        match = null;
-
     }
 
     @Override

@@ -29,6 +29,8 @@ import org.jetbrains.annotations.Nullable;
 import thepoultryman.ebwmi.Ebwmi;
 import thepoultryman.ebwmi.blockentities.CampfirePotEntity;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
+import thepoultryman.ebwmi.registry.BlockEntityRegistry;
+import thepoultryman.ebwmi.registry.BlockRegistry;
 
 import java.util.Optional;
 
@@ -91,7 +93,7 @@ public class CampfirePot extends BlockWithEntity {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, Ebwmi.CAMPFIRE_POT_BLOCK_ENTITY_TYPE, (world1, pos, state1, blockEntity) -> blockEntity.cookingTick(world1, pos));
+        return checkType(type, BlockEntityRegistry.CAMPFIRE_POT_BLOCK_ENTITY, (world1, pos, state1, blockEntity) -> blockEntity.cookingTick(world1, pos));
     }
 
     @Override
