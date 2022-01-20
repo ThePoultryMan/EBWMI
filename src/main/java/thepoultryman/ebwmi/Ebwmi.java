@@ -53,6 +53,7 @@ public class Ebwmi implements ModInitializer {
 
 	// Tags
 	public static Tag<Item> EBWMI_UNCOOKABLE;
+	public static Tag<Item> BREAD;
 
 	@Override
 	public void onInitialize() {
@@ -66,6 +67,7 @@ public class Ebwmi implements ModInitializer {
 		CAMPFIRE_POT_BLOCK_ENTITY_TYPE = Registry.register(Registry.BLOCK_ENTITY_TYPE, "ebwmi:oven_block_entity", FabricBlockEntityTypeBuilder.create((blockPos, blockState) -> new CampfirePotEntity(blockPos, blockState), CAMPFIRE_POT).build(null));
 
 		EBWMI_UNCOOKABLE = TagFactory.ITEM.create(new Identifier("c", "ebwmi_uncookable"));
+		BREAD = TagFactory.ITEM.create(new Identifier("c", "ebwmi_bread"));
 
 		// Recipe Stuff
 		Registry.register(Registry.RECIPE_SERIALIZER, CampfirePotRecipeSerializer.ID, CampfirePotRecipeSerializer.INSTANCE);
