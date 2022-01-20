@@ -1,7 +1,7 @@
 {
     "type": "ebwmi:campfire_pot_recipe",
     "ingredientA": {
-        "item": "minecraft:bread"
+        "tag": "c:ebwmi_bread"
     },
     "ingredientB": {
         "item": "minecraft:poisonous_potato"
