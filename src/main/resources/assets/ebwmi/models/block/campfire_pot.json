@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/block",
+	"parent": "minecraft:block/block",
 	"texture_size": [32, 32],
 	"textures": {
 		"campfire_pot": "ebwmi:block/campfire_pot",
-		"stone": "block/stone"
+		"stone": "minecraft:block/stone"
 	},
 	"elements": [
 		{
