@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"campfire_pot": "ebwmi:block/campfire_pot",
-		"stone": "block/stone",
-		"fire": "block/campfire_fire"
+		"stone": "minecraft:block/stone",
+		"fire": "minecraft:block/campfire_fire"
 	},
 	"elements": [
 		{
