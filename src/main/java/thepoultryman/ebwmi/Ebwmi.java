@@ -17,8 +17,8 @@ public class Ebwmi implements ModInitializer {
 		BlockRegistry.registerBlocks();
 		BlockEntityRegistry.registerBlockEntities();
 		ItemRegistry.registerItems();
-		TagRegistry.registerTags();
 		StatusEffectRegistry.registerStatusEffects();
 		RecipeRegistry.registerCraftingRecipes();
+		TagRegistry.registerTags();
 	}
 }
