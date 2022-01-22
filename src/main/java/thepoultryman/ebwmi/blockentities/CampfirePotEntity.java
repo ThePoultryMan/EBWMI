@@ -35,7 +35,7 @@ public class CampfirePotEntity extends BlockEntity{
     public void addIngredient(ItemStack ingredient) {
         if (ingredient.isEmpty() || ingredient.isIn(TagRegistry.UNCOOKABLE)) return;
         for (int i = 0; i < ingredients.size(); ++i) {
-            ItemStack currentIngredient = (ItemStack) ingredients.get(i);
+            ItemStack currentIngredient = ingredients.get(i);
             if (currentIngredient.isEmpty()) {
                 ingredients.set(i, ingredient.split(1));
                 updateListeners();
@@ -47,7 +47,7 @@ public class CampfirePotEntity extends BlockEntity{
     public void removeIngredients(World world, BlockPos pos) {
         for (ItemStack ingredient : ingredients) {
             if (ingredient.isEmpty()) return;
-            ItemScatterer.spawn(world, (double) pos.getX(), (double) pos.getY(), (double) pos.getZ(), ingredient);
+            ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), ingredient);
             updateListeners();
         }
     }
@@ -78,7 +78,7 @@ public class CampfirePotEntity extends BlockEntity{
             } else if (match.isPresent() && cookingTime < (match.get().getCookingTime())) {
                 extinguishFire(world, blockState);
                 clear();
-                ItemScatterer.spawn(world, (double) pos.getX(), (double) pos.getY(), (double) pos.getZ(), match.get().getOutput().copy());
+                ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), match.get().getOutput().copy());
                 updateListeners();
             }
         }
