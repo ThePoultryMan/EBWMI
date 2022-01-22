@@ -15,10 +15,10 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import thepoultryman.ebwmi.Ebwmi;
 import thepoultryman.ebwmi.blocks.CampfirePot;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
 import thepoultryman.ebwmi.registry.BlockEntityRegistry;
+import thepoultryman.ebwmi.registry.TagRegistry;
 
 import java.util.Optional;
 
@@ -33,7 +33,7 @@ public class CampfirePotEntity extends BlockEntity{
     }
 
     public void addIngredient(ItemStack ingredient) {
-        if (ingredient.isEmpty() || ingredient.isIn(Ebwmi.UNCOOKABLE)) return;
+        if (ingredient.isEmpty() || ingredient.isIn(TagRegistry.UNCOOKABLE)) return;
         for (int i = 0; i < ingredients.size(); ++i) {
             ItemStack currentIngredient = (ItemStack) ingredients.get(i);
             if (currentIngredient.isEmpty()) {
