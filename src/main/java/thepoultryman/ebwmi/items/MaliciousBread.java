@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import thepoultryman.ebwmi.Ebwmi;
+import thepoultryman.ebwmi.registry.ItemRegistry;
 
 public class MaliciousBread extends Item {
 	public MaliciousBread(Settings settings) {
@@ -27,7 +28,7 @@ public class MaliciousBread extends Item {
 			userx.sendToolBreakStatus(user.preferredHand);
 		});
 
-		user.eatFood(world, new ItemStack(Ebwmi.MALICIOUS_BREAD));
+		user.eatFood(world, new ItemStack(ItemRegistry.MALICIOUS_BREAD));
 
 		return stack;
 	}

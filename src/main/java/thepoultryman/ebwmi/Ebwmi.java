@@ -16,15 +16,13 @@ import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipeSerializer;
 import thepoultryman.ebwmi.registry.BlockEntityRegistry;
 import thepoultryman.ebwmi.registry.BlockRegistry;
+import thepoultryman.ebwmi.registry.ItemRegistry;
 import thepoultryman.ebwmi.statuseffects.MaliciousIntentStatusEffect;
 
 public class Ebwmi implements ModInitializer {
 	public static final String MOD_ID = "ebwmi";
 
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
-
-	// Items
-	public static final Item MALICIOUS_BREAD = new MaliciousBread(new Item.Settings().group(ItemGroup.FOOD).maxCount(1).maxDamage(64).food(new FoodComponent.Builder().hunger(1).alwaysEdible().build()));
 
 	// Status Effects
 	public static final StatusEffect MALICIOUS_INTENT_STATUS_EFFECT = new MaliciousIntentStatusEffect();
@@ -39,8 +37,8 @@ public class Ebwmi implements ModInitializer {
 
 		BlockRegistry.registerBlocks();
 		BlockEntityRegistry.registerBlockEntities();
+		ItemRegistry.registerItems();
 
-		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "malicious_bread"), MALICIOUS_BREAD);
 		Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "malicious_intent"), MALICIOUS_INTENT_STATUS_EFFECT);
 
 		UNCOOKABLE = TagFactory.ITEM.create(new Identifier("c", "ebwmi_uncookable"));
