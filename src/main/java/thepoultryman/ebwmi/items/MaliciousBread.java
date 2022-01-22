@@ -16,7 +16,7 @@ public class MaliciousBread extends Item {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (entity instanceof LivingEntity livingEntity && selected)
+        if (entity instanceof LivingEntity livingEntity && livingEntity.getStackInHand(livingEntity.getActiveHand()).getItem() == ItemRegistry.MALICIOUS_BREAD)
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffectRegistry.MALICIOUS_INTENT_STATUS_EFFECT, 220));
         else if (entity instanceof LivingEntity livingEntity)
             livingEntity.removeStatusEffect(StatusEffectRegistry.MALICIOUS_INTENT_STATUS_EFFECT);
