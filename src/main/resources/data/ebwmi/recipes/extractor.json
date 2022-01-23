@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        " C ",
+        " N "
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "ebwmi:capsule"
+        },
+        "N": {
+            "item": "minecraft:iron_nugget"
+        }
+    },
+    "result": {
+        "item": "ebwmi:extractor"
+    }
+}

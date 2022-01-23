@@ -17,6 +17,9 @@ public class ItemRegistry {
     public static final Item POT = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item CAPSULE = new Item(new Item.Settings().group(ItemGroup.MISC));
 
+    // Mod Tools
+    public static final Item EXTRACTOR = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+
     // Purified Intent
     public static final Item PURIFIED_MALICIOUS_INTENT = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item PURIFIED_GOOD_INTENT = new Item(new Item.Settings().group(ItemGroup.MISC));
@@ -30,6 +33,7 @@ public class ItemRegistry {
         register("purified_neutral_intent", PURIFIED_NEUTRAL_INTENT);
         register("pot", POT);
         register("capsule", CAPSULE);
+        register("extractor", EXTRACTOR);
     }
 
     private static void register(String name, Item item) {
