@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "   ",
+        "SMP"
+    ],
+    "key": {
+        "S": {
+            "tag": "minecraft:wooden_slabs"
+        },
+        "M": {
+            "item": "ebwmi:purified_malicious_intent"
+        },
+        "P": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "ebwmi:malicious_kazoo"
+    }
+}
