@@ -24,9 +24,7 @@ public class MaliciousBread extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        stack.damage(1, user, (userx) -> {
-            userx.sendToolBreakStatus(user.preferredHand);
-        });
+        stack.damage(1, user, (userx) -> userx.sendToolBreakStatus(user.preferredHand));
 
         user.eatFood(world, new ItemStack(ItemRegistry.MALICIOUS_BREAD));
 
