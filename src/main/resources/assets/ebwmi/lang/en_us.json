@@ -5,6 +5,7 @@
     "item.ebwmi.purified_malicious_intent": "Purified Malicious Intent",
     "item.ebwmi.purified_good_intent": "Purified Good Intent",
     "item.ebwmi.purified_neutral_intent": "Purified Neutral Intent",
+    "item.ebwmi.pot": "Pot",
     "effect.ebwmi.malicious_intent": "Malicious Intent",
     "death.attack.sound": "%1$s ears bled until they died"
 }
