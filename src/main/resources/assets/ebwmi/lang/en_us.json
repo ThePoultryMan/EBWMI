@@ -2,5 +2,7 @@
     "item.ebwmi.malicious_bread": "Malicious Bread",
     "effect.ebwmi.malicious_intent": "Malicious Intent",
 
-    "block.ebwmi.campfire_pot": "Campfire Pot"
+    "block.ebwmi.campfire_pot": "Campfire Pot",
+
+    "death.attack.sound": "%1$s ears bled until they died"
 }
