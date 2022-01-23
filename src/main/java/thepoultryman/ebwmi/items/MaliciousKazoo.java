@@ -19,6 +19,7 @@ public class MaliciousKazoo extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        ItemStack stackInHand = user.getStackInHand(hand);
         if (!world.isClient) {
             Box box = user.getBoundingBox().expand(4D, 2D, 4D);
             List<LivingEntity> nonSpectatingEntities = world.getNonSpectatingEntities(LivingEntity.class, box);
@@ -27,8 +28,11 @@ public class MaliciousKazoo extends Item {
                     nonSpectatingEntity.damage(DamageSources.SOUND, 2f);
                 }
             }
+            stackInHand.damage(1, user, (userx) -> userx.sendToolBreakStatus(hand));
+
+            return TypedActionResult.success(stackInHand);
         }
 
-        return TypedActionResult.success(user.getStackInHand(hand));
+        return TypedActionResult.pass(stackInHand);
     }
 }
