@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " P ",
+        " C "
+    ],
+    "key": {
+        "P": {
+            "item": "ebwmi:pot"
+        },
+        "C": {
+            "item": "minecraft:campfire"
+        }
+    },
+    "result": {
+        "item": "ebwmi:campfire_pot"
+    }
+}
