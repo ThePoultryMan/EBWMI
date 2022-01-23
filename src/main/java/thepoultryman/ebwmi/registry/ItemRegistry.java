@@ -12,6 +12,7 @@ import thepoultryman.ebwmi.items.MaliciousKazoo;
 public class ItemRegistry {
     public static final Item MALICIOUS_BREAD = new MaliciousBread(new Item.Settings().group(ItemGroup.FOOD).maxCount(1).maxDamage(64).food(new FoodComponent.Builder().hunger(1).alwaysEdible().build()));
     public static final Item MALICIOUS_KAZOO = new MaliciousKazoo(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1).maxDamage(32));
+    public static final Item POT = new Item(new Item.Settings().group(ItemGroup.MISC));
 
     // Purified Intent
     public static final Item PURIFIED_MALICIOUS_INTENT = new Item(new Item.Settings().group(ItemGroup.MISC));
@@ -24,6 +25,7 @@ public class ItemRegistry {
         register("purified_malicious_intent", PURIFIED_MALICIOUS_INTENT);
         register("purified_good_intent", PURIFIED_GOOD_INTENT);
         register("purified_neutral_intent", PURIFIED_NEUTRAL_INTENT);
+        register("pot", POT);
     }
 
     private static void register(String name, Item item) {
