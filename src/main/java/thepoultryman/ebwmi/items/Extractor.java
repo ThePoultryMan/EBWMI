@@ -31,9 +31,7 @@ public class Extractor extends Item {
                 user.setStackInHand(hand, new ItemStack(ItemRegistry.EXTRACTOR_NEUTRAL));
                 return ActionResult.SUCCESS;
             } else {
-                Ebwmi.LOGGER.info(stack.getOrCreateNbt().getInt("intentId"));
                 return ActionResult.PASS;
-
             }
 
         } else {
