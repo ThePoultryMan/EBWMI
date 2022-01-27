@@ -8,6 +8,9 @@
     "item.ebwmi.pot": "Pot",
     "item.ebwmi.capsule": "Capsule",
     "item.ebwmi.extractor": "Extractor",
+    "item.ebwmi.extractor_malicious": "Extractor with Malicious Intent",
+    "item.ebwmi.extractor_good": "Extractor with Good Intent",
+    "item.ebwmi.extractor_neutral": "Extractor with Neutral Intent",
     "effect.ebwmi.malicious_intent": "Malicious Intent",
     "death.attack.sound": "%1$s ears bled until they died"
 }

@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import thepoultryman.ebwmi.Ebwmi;
+import thepoultryman.ebwmi.items.Extractor;
 import thepoultryman.ebwmi.items.MaliciousBread;
 import thepoultryman.ebwmi.items.MaliciousKazoo;
 
@@ -18,7 +19,11 @@ public class ItemRegistry {
     public static final Item CAPSULE = new Item(new Item.Settings().group(ItemGroup.MISC));
 
     // Mod Tools
-    public static final Item EXTRACTOR = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    // --> Extractors
+    public static final Item EXTRACTOR = new Extractor(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    public static final Item EXTRACTOR_MALICIOUS = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    public static final Item EXTRACTOR_GOOD = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    public static final Item EXTRACTOR_NEUTRAL = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
 
     // Purified Intent
     public static final Item PURIFIED_MALICIOUS_INTENT = new Item(new Item.Settings().group(ItemGroup.MISC));
@@ -33,7 +38,11 @@ public class ItemRegistry {
         register("purified_neutral_intent", PURIFIED_NEUTRAL_INTENT);
         register("pot", POT);
         register("capsule", CAPSULE);
+        // Extractors
         register("extractor", EXTRACTOR);
+        register("extractor_malicious", EXTRACTOR_MALICIOUS);
+        register("extractor_good", EXTRACTOR_GOOD);
+        register("extractor_neutral", EXTRACTOR_NEUTRAL);
     }
 
     private static void register(String name, Item item) {
