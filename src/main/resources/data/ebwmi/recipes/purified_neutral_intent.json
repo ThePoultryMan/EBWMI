@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "ebwmi:extractor_neutral"
+        }
+    ],
+    "result": {
+        "item": "ebwmi:purified_neutral_intent"
+    }
+}

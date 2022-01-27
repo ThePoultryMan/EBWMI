@@ -21,9 +21,9 @@ public class ItemRegistry {
     // Mod Tools
     // --> Extractors
     public static final Item EXTRACTOR = new Extractor(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
-    public static final Item EXTRACTOR_MALICIOUS = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
-    public static final Item EXTRACTOR_GOOD = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
-    public static final Item EXTRACTOR_NEUTRAL = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    public static final Item EXTRACTOR_MALICIOUS = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1).recipeRemainder(EXTRACTOR));
+    public static final Item EXTRACTOR_GOOD = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1).recipeRemainder(EXTRACTOR));
+    public static final Item EXTRACTOR_NEUTRAL = new Item(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1).recipeRemainder(EXTRACTOR));
 
     // Purified Intent
     public static final Item PURIFIED_MALICIOUS_INTENT = new Item(new Item.Settings().group(ItemGroup.MISC));

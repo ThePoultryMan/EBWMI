@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "ebwmi:extractor_malicious"
+        }
+    ],
+    "result": {
+        "item": "ebwmi:purified_malicious_intent"
+    }
+}
