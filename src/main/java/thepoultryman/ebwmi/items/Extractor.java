@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import thepoultryman.ebwmi.Ebwmi;
+import thepoultryman.ebwmi.DamageSources;
 import thepoultryman.ebwmi.registry.ItemRegistry;
 import thepoultryman.ebwmi.registry.TagRegistry;
 
@@ -23,13 +23,13 @@ public class Extractor extends Item {
 
             if (entityType.isIn(TagRegistry.EXTRACTOR_MALICIOUS_INTENT)) {
                 user.setStackInHand(hand, new ItemStack(ItemRegistry.EXTRACTOR_MALICIOUS));
-                return ActionResult.SUCCESS;
+                return doSuccessActions(entity);
             } else if (entityType.isIn(TagRegistry.EXTRACTOR_GOOD_INTENT)) {
                 user.setStackInHand(hand, new ItemStack(ItemRegistry.EXTRACTOR_GOOD));
-                return ActionResult.SUCCESS;
+                return doSuccessActions(entity);
             } else if (entityType.isIn(TagRegistry.EXTRACTOR_NEUTRAL_INTENT)) {
                 user.setStackInHand(hand, new ItemStack(ItemRegistry.EXTRACTOR_NEUTRAL));
-                return ActionResult.SUCCESS;
+                return doSuccessActions(entity);
             } else {
                 return ActionResult.PASS;
             }
@@ -37,5 +37,11 @@ public class Extractor extends Item {
         } else {
             return ActionResult.PASS;
         }
+    }
+
+    private ActionResult doSuccessActions(LivingEntity livingEntity) {
+        float damageAmount = (livingEntity.getHealth() / 1.75f);
+        livingEntity.damage(DamageSources.EXTRACTOR, damageAmount > 0 ? damageAmount : 3);
+        return ActionResult.SUCCESS;
     }
 }
