@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi.statuseffects;
+package thepoultryman.ebwmi.statuseffect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;

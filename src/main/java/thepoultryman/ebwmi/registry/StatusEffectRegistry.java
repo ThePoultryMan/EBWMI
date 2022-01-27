@@ -4,7 +4,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import thepoultryman.ebwmi.Ebwmi;
-import thepoultryman.ebwmi.statuseffects.MaliciousIntentStatusEffect;
+import thepoultryman.ebwmi.statuseffect.MaliciousIntentStatusEffect;
 
 public class StatusEffectRegistry {
     public static final StatusEffect MALICIOUS_INTENT_STATUS_EFFECT = new MaliciousIntentStatusEffect();

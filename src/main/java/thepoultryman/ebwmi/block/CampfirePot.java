@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi.blocks;
+package thepoultryman.ebwmi.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,7 +15,6 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
@@ -26,11 +25,9 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import thepoultryman.ebwmi.Ebwmi;
-import thepoultryman.ebwmi.blockentities.CampfirePotEntity;
+import thepoultryman.ebwmi.blockentity.CampfirePotEntity;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
 import thepoultryman.ebwmi.registry.BlockEntityRegistry;
-import thepoultryman.ebwmi.registry.BlockRegistry;
 
 import java.util.Optional;
 

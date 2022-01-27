@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi.blockentities;
+package thepoultryman.ebwmi.blockentity;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,7 +15,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import thepoultryman.ebwmi.blocks.CampfirePot;
+import thepoultryman.ebwmi.block.CampfirePot;
 import thepoultryman.ebwmi.recipes.CampfirePotRecipe;
 import thepoultryman.ebwmi.registry.BlockEntityRegistry;
 import thepoultryman.ebwmi.registry.TagRegistry;

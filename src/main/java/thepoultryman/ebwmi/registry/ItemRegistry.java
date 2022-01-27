@@ -6,9 +6,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import thepoultryman.ebwmi.Ebwmi;
-import thepoultryman.ebwmi.items.Extractor;
-import thepoultryman.ebwmi.items.MaliciousBread;
-import thepoultryman.ebwmi.items.MaliciousKazoo;
+import thepoultryman.ebwmi.item.Extractor;
+import thepoultryman.ebwmi.item.MaliciousBread;
+import thepoultryman.ebwmi.item.MaliciousKazoo;
 
 public class ItemRegistry {
     public static final Item MALICIOUS_BREAD = new MaliciousBread(new Item.Settings().group(ItemGroup.FOOD).maxCount(1).maxDamage(64).food(new FoodComponent.Builder().hunger(1).alwaysEdible().build()));

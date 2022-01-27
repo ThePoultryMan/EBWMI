@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi.blockentityrenderers;
+package thepoultryman.ebwmi.blockentityrenderer;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -9,7 +9,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.Vec3f;
-import thepoultryman.ebwmi.blockentities.CampfirePotEntity;
+import thepoultryman.ebwmi.blockentity.CampfirePotEntity;
 
 import java.util.Random;
 

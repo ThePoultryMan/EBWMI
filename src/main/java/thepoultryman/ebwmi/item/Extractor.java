@@ -1,4 +1,4 @@
-package thepoultryman.ebwmi.items;
+package thepoultryman.ebwmi.item;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

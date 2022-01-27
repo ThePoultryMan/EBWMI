@@ -11,7 +11,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import thepoultryman.ebwmi.Ebwmi;
-import thepoultryman.ebwmi.blocks.CampfirePot;
+import thepoultryman.ebwmi.block.CampfirePot;
 
 import java.util.function.ToIntFunction;
 
