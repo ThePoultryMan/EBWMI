@@ -12,5 +12,6 @@
     "item.ebwmi.extractor_good": "Extractor with Good Intent",
     "item.ebwmi.extractor_neutral": "Extractor with Neutral Intent",
     "effect.ebwmi.malicious_intent": "Malicious Intent",
-    "death.attack.sound": "%1$s ears bled until they died"
+    "death.attack.sound": "%1$s ears bled until they died",
+    "death.attack.extractor": "%1$s had too much extracted from them"
 }
